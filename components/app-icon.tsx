@@ -25,7 +25,6 @@ export function AppIcon({ id, name, color, icon, customIcon, size = "normal" }: 
       "calendar",
       "messages",
       "podcasts",
-      "safari",
       "maps",
       "health",
       "camera",

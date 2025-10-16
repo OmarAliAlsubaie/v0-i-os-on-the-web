@@ -9,7 +9,7 @@ export function About() {
   const { closeApp } = useAppState()
 
   return (
-    <div className="h-full w-full bg-gradient-to-br from-slate-900 via-slate-800 to-slate-900 text-white overflow-auto">
+    <div className="h-full w-full bg-gradient-to-br from-slate-900 via-slate-800 to-slate-900 text-white overflow-auto [&::-webkit-scrollbar]:hidden [-ms-overflow-style:none] [scrollbar-width:none]">
       <StatusBar time={new Date()} dark={false} />
 
       <div className="pt-12 px-6 pb-6">

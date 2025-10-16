@@ -30,7 +30,6 @@ export function HomeScreen({ time }: HomeScreenProps) {
       "reminders",
       "clock",
       "phone",
-      "safari",
       "messages",
       "music",
     ]
@@ -130,7 +129,7 @@ export function HomeScreen({ time }: HomeScreenProps) {
                     <div className="text-white">
                       <div className="text-xs mb-2">Get in touch</div>
                       <div className="text-sm font-medium mb-1">+966532441434</div>
-                      <div className="text-xs mb-3">omaroutset@gmail.com</div>
+                      <div className="text-xs mb-3">omaroutset@gmail</div>
                       <div className="text-xs text-white/80">Available for projects</div>
                     </div>
                   }
@@ -219,7 +218,6 @@ export function HomeScreen({ time }: HomeScreenProps) {
       {/* Dock */}
       <div className="grid grid-cols-4 gap-4 px-6 mb-6">
         <AppIcon id="phone" name="Phone" color="bg-green-500" />
-        <AppIcon id="safari" name="Safari" color="" />
         <AppIcon id="messages" name="Messages" color="" />
         <AppIcon id="music" name="Music" color="" />
       </div>
