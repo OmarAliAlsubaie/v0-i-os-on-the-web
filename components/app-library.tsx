@@ -20,6 +20,16 @@ interface AppCategory {
 // App categories based on functionality
 const appCategories: AppCategory[] = [
   {
+    id: "portfolio",
+    name: "Portfolio",
+    apps: [
+      { id: "about", name: "About", color: "bg-gradient-to-br from-slate-700 to-slate-900", icon: "👤" },
+      { id: "experience", name: "Experience", color: "bg-gradient-to-br from-blue-600 to-blue-800", icon: "💼" },
+      { id: "projects", name: "Projects", color: "bg-gradient-to-br from-purple-600 to-pink-600", icon: "🚀" },
+      { id: "contact", name: "Contact", color: "bg-gradient-to-br from-green-600 to-emerald-600", icon: "📧" },
+    ],
+  },
+  {
     id: "lifestyle",
     name: "Lifestyle",
     apps: [

@@ -68,6 +68,9 @@ export function AppIcon({ id, name, color, icon, customIcon, size = "normal" }: 
     }
 
     if (customIcon) return customIcon
+    if (typeof icon === "string" && icon.length <= 2) {
+      return <div className="text-3xl">{icon}</div>
+    }
     if (icon) return <div className="text-2xl">{icon}</div>
     return <div className="flex items-center justify-center w-full h-full">{name[0].toUpperCase()}</div>
   }

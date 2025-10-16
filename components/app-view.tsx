@@ -17,6 +17,10 @@ import { MessagesApp } from "@/components/messages/messages-app"
 import { SafariApp } from "@/components/safari/safari-app"
 import { MusicApp } from "@/components/music/music-app"
 import { PhoneApp } from "@/components/phone/phone-app"
+import { About } from "@/components/about"
+import { Experience } from "@/components/experience"
+import { Projects } from "@/components/projects"
+import { Contact } from "@/components/contact"
 
 interface AppViewProps {
   appId: string
@@ -55,6 +59,14 @@ export function AppView({ appId }: AppViewProps) {
         return <MusicApp />
       case "phone":
         return <PhoneApp />
+      case "about":
+        return <About />
+      case "experience":
+        return <Experience />
+      case "projects":
+        return <Projects />
+      case "contact":
+        return <Contact />
       default:
         return (
           <div className="flex flex-col items-center justify-center h-full bg-white text-black p-6">
@@ -65,7 +77,18 @@ export function AppView({ appId }: AppViewProps) {
     }
   }
 
-  const showHeader = !["camera", "messages", "photos", "notes", "safari", "phone"].includes(appId)
+  const showHeader = ![
+    "camera",
+    "messages",
+    "photos",
+    "notes",
+    "safari",
+    "phone",
+    "about",
+    "experience",
+    "projects",
+    "contact",
+  ].includes(appId)
 
   return (
     <HomeIndicator>

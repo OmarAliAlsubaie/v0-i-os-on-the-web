@@ -56,3 +56,7 @@ export type AppName =
   | "safari"
   | "music"
   | "phone"
+  | "about"
+  | "experience"
+  | "projects"
+  | "contact"

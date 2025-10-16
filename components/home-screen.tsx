@@ -112,53 +112,62 @@ export function HomeScreen({ time }: HomeScreenProps) {
               {/* Widgets */}
               <div className="grid grid-cols-2 gap-4 mb-6">
                 <Widget
-                  className="bg-blue-500/80 backdrop-blur-md"
-                  title="Weather"
+                  className="bg-gradient-to-br from-slate-800/90 to-slate-900/90 backdrop-blur-md border border-white/10"
+                  title="About"
                   content={
                     <div className="text-white">
-                      <div className="text-sm">Cupertino</div>
-                      <div className="text-5xl font-light">56°</div>
-                      <div className="flex items-center gap-1 mt-1">
-                        <span className="text-yellow-300 text-lg">☀️</span>
-                        <span>Sunny</span>
-                      </div>
-                      <div className="text-xs mt-1">H:77° L:55°</div>
+                      <div className="text-lg font-semibold mb-1">Omar Alsubaie</div>
+                      <div className="text-sm text-blue-400 mb-2">UX/UI Designer</div>
+                      <div className="text-xs text-gray-300">Software Engineer</div>
+                      <div className="text-xs text-gray-400 mt-2">King Saud University</div>
                     </div>
                   }
                 />
                 <Widget
-                  className="bg-black/80 backdrop-blur-md"
-                  title="Calendar"
+                  className="bg-gradient-to-br from-blue-600/90 to-purple-600/90 backdrop-blur-md"
+                  title="Contact"
                   content={
                     <div className="text-white">
-                      <div className="text-xs text-red-500">MONDAY</div>
-                      <div className="text-5xl font-light">{dayOfMonth}</div>
-                      <div className="flex items-center gap-1 mt-1 text-xs">
-                        <span className="text-gray-400">🔒</span>
-                        <span>2 birthdays</span>
-                      </div>
-                      <div className="text-xs mt-1 text-red-500">
-                        Portfolio work s...
-                        <br />
-                        10 - 10:30AM
-                      </div>
+                      <div className="text-xs mb-2">Get in touch</div>
+                      <div className="text-sm font-medium mb-1">+966532441434</div>
+                      <div className="text-xs mb-3">omaroutset@gmail.com</div>
+                      <div className="text-xs text-white/80">Available for projects</div>
                     </div>
                   }
                 />
               </div>
 
-              {/* First page app icons */}
               <div className="grid grid-cols-4 gap-4 mb-6">
-                <AppIcon id="facetime" name="FaceTime" color="" />
-                <AppIcon id="calendar" name="Calendar" color="" />
-                <AppIcon id="photos" name="Photos" color="bg-gradient-to-br from-pink-400 via-purple-400 to-blue-400" />
-                <AppIcon id="camera" name="Camera" color="bg-gray-800" />
+                <AppIcon
+                  id="about"
+                  name="About"
+                  color="bg-gradient-to-br from-slate-700 to-slate-900"
+                  customIcon={<div className="w-full h-full flex items-center justify-center text-3xl">👤</div>}
+                />
+                <AppIcon
+                  id="experience"
+                  name="Experience"
+                  color="bg-gradient-to-br from-blue-600 to-blue-800"
+                  customIcon={<div className="w-full h-full flex items-center justify-center text-3xl">💼</div>}
+                />
+                <AppIcon
+                  id="projects"
+                  name="Projects"
+                  color="bg-gradient-to-br from-purple-600 to-pink-600"
+                  customIcon={<div className="w-full h-full flex items-center justify-center text-3xl">🚀</div>}
+                />
+                <AppIcon
+                  id="contact"
+                  name="Contact"
+                  color="bg-gradient-to-br from-green-600 to-emerald-600"
+                  customIcon={<div className="w-full h-full flex items-center justify-center text-3xl">📧</div>}
+                />
               </div>
 
               <div className="grid grid-cols-4 gap-4 mb-6">
-                <AppIcon id="mail" name="Mail" color="bg-blue-500" />
-                <AppIcon id="notes" name="Notes" color="bg-yellow-100" />
-                <AppIcon id="reminders" name="Reminders" color="bg-white" />
+                <AppIcon id="calendar" name="Calendar" color="" />
+                <AppIcon id="photos" name="Photos" color="bg-gradient-to-br from-pink-400 via-purple-400 to-blue-400" />
+                <AppIcon id="camera" name="Camera" color="bg-gray-800" />
                 <AppIcon id="clock" name="Clock" color="bg-black" />
               </div>
             </motion.div>
