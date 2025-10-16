@@ -38,6 +38,7 @@ export function AppIcon({ id, name, color, icon, customIcon, size = "normal" }: 
       "news",
       "tv",
       "notes",
+      "safari",
     ]
 
     if (svgIcons.includes(id)) {

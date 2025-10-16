@@ -32,6 +32,7 @@ export function HomeScreen({ time }: HomeScreenProps) {
       "phone",
       "messages",
       "music",
+      "safari",
     ]
 
     preloadIcons.forEach((icon) => {
@@ -218,6 +219,7 @@ export function HomeScreen({ time }: HomeScreenProps) {
       {/* Dock */}
       <div className="grid grid-cols-4 gap-4 px-6 mb-6">
         <AppIcon id="phone" name="Phone" color="bg-green-500" />
+        <AppIcon id="safari" name="Safari" color="" />
         <AppIcon id="messages" name="Messages" color="" />
         <AppIcon id="music" name="Music" color="" />
       </div>
